@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlusCampus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/edulogo.png">
+</head>
+<body style="height: 100vh;">
+    <div class="Login">
+        <div class="form">
+               <img src="/assets/pcet_logo_new.jpg" alt="" height="100px" >
+               <div><span style="color: #292DC6; font-size: x-large;     font-weight: bold;">Student Sign</span><span style="color: #F39C12; font-size: x-large;font-weight: bold;">-In</span></div>
+               <div><input type="text" name="" placeholder="Username" id="keywordInput"></div>
+               <div><input type="password" name="" id="" placeholder="Password" ></div>
+               <!-- <div><h2>helpme</h2> <h2></h2></div> -->
+               <button onclick="checkAndRedirect()" >SIGN IN</button>
+        </div>
+         <div> <img src="/assets/edupluscampus_banner.jpg" alt="" height="160px"></div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <span>Powered By</span>
+        <img src="/assets/eduplus.png" alt="">
+        <div>
+            <img src="/assets/icons8-youtube.svg" alt="">
+        </div>
+        <div>
+            <img src="/assets/facebook-svgrepo-com.svg" alt="">
+        </div>
+        <div>
+            <img src="/assets/instagram-1-svgrepo-com.svg" alt="">
+        </div>
+        <div>
+            <img src="/assets/twitter-social-media-communication-network-internet-connection-svgrepo-com.svg" alt="">
+        </div>
+        <div>
+            <img src="/assets/linkedin-svgrepo-com.svg" alt="">
+        </div>
+    </footer>
+    <script>
+        function checkAndRedirect() {
+            const inputElement = document.getElementById('keywordInput');
+            const keyword = inputElement.value.toLowerCase(); 
+
+            if (keyword === 'shree') {
+            // if (inputElement === 'shree') {
+                window.location.href = 's1index.html';
+            } else if (keyword === 'sujal') {
+            // } else if (inputElement === 'sujal') {
+                window.location.href = 's2index.html';
+            } else {
+                alert('Invalid keyword. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
